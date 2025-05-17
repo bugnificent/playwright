@@ -109,7 +109,9 @@ Use these scripts to streamline test execution in various environments.
 ├── actors/
 ├── questions/
 ├── tasks/
-|── tests/
+├── visual-accessibility.spec.ts-snapshots/
+├── playwright-page.spec.ts
+├── visual-accessibility.spec.ts
 ├── playwright-report/
 ├── package.json
 ├── playwright.config.ts

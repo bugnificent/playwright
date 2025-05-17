@@ -94,6 +94,7 @@ Via `playwright.config.ts`, this setup supports:
   "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",
   "test:e2e:dev": "npx playwright test tests/ --project=chromium --headed --retries=0 --reporter=line",
   "test:e2e:smoke": "npx playwright test tests/ --grep @smoke",
+  "test:smoke:update-ss": "npx playwright test tests/ --grep @smoke --update-snapshots",
   "test:visual:accessibility": "npx playwright test visual-accessibility.spec.ts"
 }
 ```

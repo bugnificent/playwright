@@ -105,11 +105,11 @@ Use these scripts to streamline test execution in various environments.
 ## 🗂 Project Structure
 
 ```
-│   ├── abilities/
-│   ├── actors/
-│   ├── questions/
-│   ├── tasks/
-│   └── tests/
+├── abilities/
+├── actors/
+├── questions/
+├── tasks/
+|── tests/
 ├── playwright-report/
 ├── package.json
 ├── playwright.config.ts

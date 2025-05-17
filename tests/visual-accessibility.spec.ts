@@ -4,7 +4,7 @@ import { injectAxe, checkA11y } from 'axe-playwright';
 test.describe('Visual and Accessibility Tests', () => {
   test.use({
     // Can use specific viewport size for consistent visual regression testing
-       viewport: { width: 1280, height: 800 },
+       viewport: { width: 1280, height: 860 },
     // Specific user agent string if needed
     // userAgent: 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.3',
   });
@@ -72,15 +72,7 @@ test('@smoke - Visual Regression', async ({ page }) => {
     await element.scrollIntoViewIfNeeded(); // Makes each image visible
     await element.waitFor({ state: 'visible' }); // Waits for load completion
   }
-
-  /*
-  // Handle hover-activated elements if any
-    const hoverElements = await page.getByRole('link', { name: 'mail' }).all();
-    for (const el of hoverElements) {
-      await el.hover();
-      await page.waitForTimeout(500); // Adjust based on your animations
-    }
-      */
+      
 
   // Additional safety measures
   await page.waitForLoadState('networkidle'); // Waits for network inactivity
@@ -93,7 +85,7 @@ test('@smoke - Visual Regression', async ({ page }) => {
     mask: [
       page.locator('[data-test="titles"]:nth-of-type(1)'), // Replace with the selector of the dynamic element
     ],
-    maxDiffPixelRatio: 0.01, // 0.2 can miss some differences
+    maxDiffPixelRatio: 0.01, // 0.02 can miss some differences
   });
 });
 

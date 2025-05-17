@@ -85,8 +85,8 @@ Via `playwright.config.ts`, this setup supports:
   "test:e2e": "npx playwright test tests/",
   "test:e2e:all": "npx playwright test",
   "test:e2e:ci": "CI=1 npx playwright test --project=ci --shard=$CI_NODE_INDEX/$CI_NODE_TOTAL",
-  "test:e2e:dev": "npx playwright test tests-examples/ --project=chromium --headed --retries=0 --reporter=line",
-  "test:e2e:smoke": "npx playwright test tests-examples/ --grep @smoke",
+  "test:e2e:dev": "npx playwright test tests/ --project=chromium --headed --retries=0 --reporter=line",
+  "test:e2e:smoke": "npx playwright test tests/ --grep @smoke",
   "test:visual:accessibility": "npx playwright test visual-accessibility.spec.ts"
 }
 ```
@@ -109,9 +109,10 @@ Use these scripts to streamline test execution in various environments.
 ├── actors/
 ├── questions/
 ├── tasks/
-├── visual-accessibility.spec.ts-snapshots/
-├── playwright-page.spec.ts
-├── visual-accessibility.spec.ts
+├── tests/
+│   ├── visual-accessibility.spec.ts-snapshots/
+│   ├── playwright-page.spec.ts
+│   ├── visual-accessibility.spec.ts
 ├── playwright-report/
 ├── package.json
 ├── playwright.config.ts

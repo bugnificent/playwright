@@ -105,7 +105,6 @@ Use these scripts to streamline test execution in various environments.
 ## 🗂 Project Structure
 
 ```
-├── screenplay/
 │   ├── abilities/
 │   ├── actors/
 │   ├── questions/

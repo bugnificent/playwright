@@ -151,7 +151,7 @@ Below i added screenshots if you want to check how it will look on built-in pw r
 ![Update snapshot issue on first run example](https://github.com/user-attachments/assets/47eae257-7607-4391-8f7b-3a5faa449077)
 
 ## Passing visual reg run example
-![Passing run example](https://github.com/user-attachments/assets/757e41eb-abc4-430f-9ed5-458386161747)
+![Passing visual reg run example](https://github.com/user-attachments/assets/0270bc4c-7417-4d9c-b7f5-5b55f7ee3cfe)
 
 ## Accessibility Issue Result
 ![Accessibility Issue Result](https://github.com/user-attachments/assets/34426a59-a08e-438c-9666-8577d803dc2f)

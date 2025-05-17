@@ -9,6 +9,7 @@ Welcome to my Playwright-based automated testing framework! This project is buil
 ## ⚠️ Important Notes
 
 npm scripts designed to reference, its not best way to do it not and not always necessary, in first run test can explode due to no baseline image to use as reference, second run will do the trick. 
+Also running against different devices will require specific setup, so stable script is going to be `npx playwright test visual-accessibility.spec.ts --project=chromium`
 
 ## ✨ Key Features
 
